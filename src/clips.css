@@ -1,0 +1,53 @@
+/* Backgrounds */
+#clips-bg {
+    position: absolute;
+    left: -5%;
+    background: url(assets/clips/clips_bg.png) no-repeat;
+    width: 120%;
+    height: 120%;
+    background-size: cover;
+    z-index: -8;
+}
+
+/* Clips Content */
+.clips {
+    position: absolute;
+    top: 0;
+    left: -2.5%;
+    z-index: 1;
+}
+
+/* Nav */
+#nav-home {
+    color: var(--home-font-color);
+    font-size: 8vw;
+    text-shadow: 0 5px 10px var(--home-font-color);
+    float: right;
+    margin: 0 5vw;
+    width: fit-content;
+    user-select: none;
+    transition: transform 100ms;
+}
+#nav-home:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#nav-home:active {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.nav-menu {
+    background: url(assets/back-arrow.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin: 2rem;
+    z-index: 100;
+    width: 6vw;
+    height: 6vh;
+    transition: transform 200ms;
+}
+.nav-menu:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

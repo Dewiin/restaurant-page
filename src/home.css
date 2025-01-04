@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Regular Show";
+    src: url(assets/RegularShow.ttf);
+}
+
+:root {
+    --home-font-color: rgb(255, 255, 255);
+}
+
+* {
+    font-family: "Regular Show";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Backgrounds */
+#home-bg {
+    position: absolute;
+    left: -5%;
+    background: url(assets/home/home_bg.png) no-repeat;
+    width: 120%;
+    height: 120%;
+    background-size: cover;
+    z-index: -10;
+}
+
+#tear-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(assets/paper_tear_bg.png) no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+#mr-bg {
+    background: url(assets/home/mordecai_rigby_home.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 25%;
+    top: 15%;
+    margin: auto;
+    z-index: -1;
+}
+
+/* Content */
+#main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+#title {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    color: var(--home-font-color);
+    text-shadow: 0 5px 10px var(--home-font-color);
+    font-size: 10vw; 
+    user-select: none;
+    transition: transform 200ms;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+#title:hover {
+    animation: bounce 1500ms ease-in-out infinite;
+    cursor: default;
+}
+
+
+/* Nav */
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 20vh;
+    width: 100vw;
+}
+
+#nav-menu {
+    color: var(--home-font-color);
+    font-size: 8vw;
+    text-shadow: 0 5px 10px var(--home-font-color);
+    float: right;
+    margin: 0 5vw;
+    width: fit-content;
+    user-select: none;
+    transition: transform 100ms;
+}
+#nav-menu:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#nav-menu:active {
+    cursor: pointer;
+    transform: scale(0.9);
+}
