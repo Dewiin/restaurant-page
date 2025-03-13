@@ -29,7 +29,7 @@ A simple, modular restaurant website from the Odin curriculum built with JavaScr
 ## Features
 - 🏠 Home Page – Welcomes visitors with an appealing design
 - 📜 Menu Page – Displays delicious dishes dynamically
-- 🛠️ Modular Code – Uses JavaScript modules for clean and reusable code
+- 🛠️ Modular Code – Uses JavaScript modules for clean and reusable code 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 ## Built With 
